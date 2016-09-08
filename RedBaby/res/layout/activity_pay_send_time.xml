@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cart_time_payjie"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/but_search"
+            android:text="结算中心"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择送货时间"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付方式" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout 
+            android:background="#ffffff"
+            android:id="@+id/pay_time_li_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作日，双休日与节假日均可送货"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_time_radio_allday"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+        <LinearLayout 
+            android:background="#ffffff"
+            
+            android:id="@+id/pay_time_li_weekday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只双休日节假日送货（工作日不送货）"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_time_radio_weekday"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+        <LinearLayout 
+            android:background="#ffffff"
+            android:id="@+id/pay_time_li_workday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只工作日送货（双休日，节假日不送货）"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_time_radio_workday"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cart_liquan_payjie"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/but_search"
+            android:text="结算中心"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择礼品卡"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已有优惠券" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout 
+            android:background="#ffffff"
+            android:id="@+id/pay_liqaun_li_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9月惊喜50元礼券"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_liquan_radio_9"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+        <LinearLayout 
+            android:background="#ffffff"
+            
+            android:id="@+id/pay_liquan_li_guoqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国庆节80元礼券"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_liquan_radio_guoqing"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+        <LinearLayout 
+            android:background="#ffffff"
+            android:id="@+id/pay_liquan_li_shengdan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="5dp"
+            >
+            <TextView 
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圣诞节大放送80元礼券"
+                android:textSize="15sp"
+                />
+            <RadioButton
+                android:id="@+id/payt_liquan_radio_shengdan"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:button="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

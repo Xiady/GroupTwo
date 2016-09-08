@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/segment_bg"
+        android:gravity="center"
+        android:text="孕妈专区"
+        android:textColor="#ff0000" />
+
+    <GridView
+        android:id="@+id/tuijian_gv_mother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" >
+    </GridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/segment_bg"
+        android:gravity="center"
+        android:text="营养食品"
+        android:textColor="#ff0000" />
+
+    <GridView
+        android:id="@+id/tuijian_gv_shipin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

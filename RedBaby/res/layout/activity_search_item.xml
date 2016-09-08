@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D90000" >
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_back_black"
+            android:layout_gravity="center"
+            android:text="返回"
+            android:id="@+id/search_back"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="搜索结果"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(50条)"
+            android:layout_marginRight="5dp"
+            android:id="@+id/search_num"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_1_bg"
+            android:text="销量"
+            android:id="@+id/search_sales"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_1_bg"
+            android:text="价格"
+            android:id="@+id/search_price"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_1_bg"
+            android:text="好评度"
+            android:id="@+id/search_praise"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_1_bg"
+            android:text="上架时间"
+            android:id="@+id/search_time"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_lv"
+        ></ListView>
+    
+</LinearLayout>

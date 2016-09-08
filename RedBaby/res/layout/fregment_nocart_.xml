@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search_button_edit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/but_search"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/search_text_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/search_button_account"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/head_button_normal"
+            android:text="去结算"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cart_image_cart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/shopcar" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的购物车中没有商品！"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快去挑件喜欢的商品吧！"
+            android:textSize="20sp" />
+        <Button 
+            android:layout_marginTop="20dp"
+            android:background="@drawable/segment_selected_1_bg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="随便逛逛"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

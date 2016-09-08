@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/head_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/callBackIm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/head_back_black"
+            android:text="返回"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的账户"
+            android:textColor="#FFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/head_button_black"
+            android:text="清空"
+            android:textColor="#FFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#F00"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView_login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:padding="10dp"
+            android:text="红孩儿"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="赚金币兑大礼"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.5" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton_yj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="余额"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_lx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="积分"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_sz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="等级"
+                android:textSize="18dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <ListView
+        android:id="@+id/listView_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+       >
+    </ListView>
+
+</LinearLayout>

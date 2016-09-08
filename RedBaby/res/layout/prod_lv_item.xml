@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/prod_iv_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/product_loading" />
+
+    <TextView
+        android:id="@+id/prod_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prod_iv_img"
+        android:layout_alignLeft="@+id/prod_tv_price"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/prod_tv_mkprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prod_tv_price"
+        android:layout_alignBottom="@+id/prod_tv_price"
+        android:layout_toRightOf="@+id/prod_tv_name"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prod_tv_name"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/huijiantou" />
+
+    <TextView
+        android:id="@+id/prod_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/prod_tv_name"
+        android:text="TextView"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/prod_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/prod_iv_img"
+        android:text="TextView"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>

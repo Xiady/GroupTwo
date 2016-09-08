@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.number2.redbaby"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.number2.redbaby.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.number2.redbaby.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.Cart_payActivity"
+            android:label="@string/title_activity_cart_pay"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.CartAddressActivity"
+            android:label="@string/title_activity_cart_address" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.CartPayTypeActivity"
+            android:label="@string/title_activity_cart_pay_type" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.PayTypeActivity"
+            android:label="@string/title_activity_pay_type" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.PaySendTimeActivity"
+            android:label="@string/title_activity_pay_send_time" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.ShouListActivity"
+            android:label="@string/title_activity_shou_list" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.Pai_TwoActivity"
+            android:label="@string/title_activity_pai__two" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.Pai_ThreeActivity"
+            android:label="@string/title_activity_pai__three" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.ProductlistActivity"
+            android:label="@string/title_activity_productlist" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.SearchItemActivity"
+            android:label="@string/title_activity_search_item" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.DetailBigActivity"
+            android:label="@string/title_activity_detail_big" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.MyAccountActivity"
+            android:label="@string/title_activity_my_account" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.RecentlyActivity"
+            android:label="@string/title_activity_recently" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.HelpCentreActivity"
+            android:label="@string/title_activity_help_centre" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.IndentActivity"
+            android:label="@string/title_activity_indent" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.AddressActivity"
+            android:label="@string/title_activity_address" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.CollectActivity"
+            android:label="@string/title_activity_collect" >
+        </activity>
+        <activity
+            android:name="com.number2.redbaby.AddAddressActivity"
+            android:label="@string/title_activity_add_address" >
+        </activity>
+        <activity android:name="com.number2.redbaby.PayDemoActivity" >
+        </activity>
+        <activity android:name="com.number2.redbaby.H5PayDemoActivity" >
+        </activity>
+        <activity android:name="com.number2.redbaby.CartPayYouhuiActivity" >
+        </activity>
+    </application>
+
+</manifest>
